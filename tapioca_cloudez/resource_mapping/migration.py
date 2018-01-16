@@ -6,6 +6,16 @@ MIGRATION_MAPPING = {
         'docs': '',
         'methods': ['POST'],
     },
+    'configr_migration_user': {
+        'resource': 'configr-migration-user/',
+        'docs': '',
+        'methods': ['POST'],
+    },
+    'configr_migration_cloud': {
+        'resource': 'configr-migration-cloud/',
+        'docs': '',
+        'methods': ['POST'],
+    },
     'sync_list': {
         'resource': 'sync/',
         'docs': '',
