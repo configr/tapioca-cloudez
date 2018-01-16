@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from .cloud_user import CLOUD_USER_MAPPING
 from .database import DATABASE_MAPPING
 from .domain import DOMAIN_MAPPING
 from .domain_configuration import DOMAIN_CONFIGURATION_MAPPING
@@ -12,6 +13,7 @@ from .migration import MIGRATION_MAPPING
 from .website import WEBSITE_MAPPING
 
 RESOURCE_MAPPING = {}
+RESOURCE_MAPPING.update(CLOUD_USER_MAPPING)
 RESOURCE_MAPPING.update(DATABASE_MAPPING)
 RESOURCE_MAPPING.update(DOMAIN_MAPPING)
 RESOURCE_MAPPING.update(DOMAIN_CONFIGURATION_MAPPING)
