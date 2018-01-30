@@ -16,6 +16,11 @@ MIGRATION_MAPPING = {
         'docs': '',
         'methods': ['POST'],
     },
+    'configr_migration_cloud_finish': {
+        'resource': 'configr-migration-cloud/{id}/finish/',
+        'docs': '',
+        'methods': ['POST'],
+    },
     'sync_list': {
         'resource': 'sync/',
         'docs': '',
