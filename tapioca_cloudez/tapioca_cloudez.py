@@ -39,11 +39,18 @@ class CloudezClientAdapter(JSONAdapterMixin, TapiocaAdapter):
         return params
 
     def get_iterator_list(self, response_data):
-        return response_data
+        if isinstance(response_data, list):
+            return response_data
+        elif isinstance(response_data, dict) and 'results' in response_data:
+            return response_data['results']
 
     def get_iterator_next_request_kwargs(self, iterator_request_kwargs,
                                          response_data, response):
-        pass
+        if isinstance(response_data, dict):
+            next = response_data.get('next')
+
+            if next:
+                return {'url': next}
 
 
 Cloudez = generate_wrapper_from_adapter(CloudezClientAdapter)
