@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from .addon import ADDON_MAPPING
 from .certificate import CERTIFICATE_MAPPING
 from .cloud_user import CLOUD_USER_MAPPING
 from .database import DATABASE_MAPPING
@@ -15,6 +16,7 @@ from .website import WEBSITE_MAPPING
 from .website_cron import WEBSITE_CRON_MAPPING
 
 RESOURCE_MAPPING = {}
+RESOURCE_MAPPING.update(ADDON_MAPPING)
 RESOURCE_MAPPING.update(CERTIFICATE_MAPPING)
 RESOURCE_MAPPING.update(CLOUD_USER_MAPPING)
 RESOURCE_MAPPING.update(DATABASE_MAPPING)
