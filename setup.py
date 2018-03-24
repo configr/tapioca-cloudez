@@ -4,12 +4,16 @@
 import os
 import re
 
-import pypandoc
 from setuptools import find_packages, setup
+
+try:
+    import pypandoc
+    readme = pypandoc.convert('README.md', 'rst')
+except (IOError, ImportError):
+    readme = ''
 
 # package variables
 package = 'tapioca_cloudez'
-readme = pypandoc.convert('README.md', 'rst')
 requirements = [
     'tapioca-wrapper<2',
 ]
