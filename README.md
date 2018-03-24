@@ -1,8 +1,8 @@
 # Tapioca cloudez
 
-![PyPI](https://img.shields.io/pypi/v/nine.svg)
-![PyPI - License](https://img.shields.io/pypi/l/Django.svg)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
+![PyPI](https://img.shields.io/pypi/v/tapioca_cloudez.svg)
+![PyPI - License](https://img.shields.io/pypi/l/tapioca_cloudez.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tapioca_cloudez.svg)
 
 ## Installation
 ```
