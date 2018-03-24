@@ -41,9 +41,9 @@ setup(
     install_requires=requirements,
     license="MIT",
     zip_safe=False,
-    keywords='cloudez',
+    keywords=['api', 'cloud', 'cloudez', 'web'],
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
